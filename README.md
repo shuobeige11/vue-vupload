@@ -59,7 +59,7 @@ export default {
         :progress="onProgress"//上传进度，移动端支持度不高
         :start="onStart"// 上传开始事件，显示缩略图
         :success="onSuccess"// 上传成功回调
-        :error="onError">// 上传失败回调（前端拦截失败的情况，比如                     超过上限之类）
+        :error="onError">// 上传失败回调（前端拦截失败的情况，比如 超过上限之类）
       <upload-list 
         :list="option.imgList"// 上传成功图片
         :thunb="option.imgCache"// 缩略图

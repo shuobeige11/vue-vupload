@@ -39,10 +39,10 @@ export default {
   }
 }
 
-## 参数大全 ：
 
 
 ### 上传组件使用方法
+```
 <template>
   <div class="ins-btn">
     <upload class="base remark-img" 
@@ -102,11 +102,13 @@ export default {
     }
   }
 </script>
-
+```
 #样式
   从父组件定义组件内样式， 
 
   ‘scoped’ 不需要加，否则会导致内部样式丢失，以防冲突，可以通过，顶层id包含下面的样式
+
+````
 
 <style lang="scss">
 @function turnToRem($px) {

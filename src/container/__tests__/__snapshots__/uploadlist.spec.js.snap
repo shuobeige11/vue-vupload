@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`uploadlist.vue renders img for each item in props.list  thumb && onDel 1`] = `
+<ul>
+    <li class="item item-list">
+        <img src="https://cmspic-10004025.image.myqcloud.com/9ea8d89b-e5f6-4668-a2d8-754d050aa900?imageMogr2/quality/80/format/webp">
+        <div class="del"></div>
+        <!---->
+    </li>
+</ul>
+`;
+
+exports[`uploadlist.vue renders img for each item in props.list 1`] = `<ul></ul>`;
+
+exports[`uploadlist.vue renders img for each item in props.list null 1`] = `<ul></ul>`;

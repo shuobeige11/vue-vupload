@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for vupload/src/component/vupload/component/upload.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../index.html">All files</a> / <a href="index.html">vupload/src/component/vupload/component</a> upload.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/83</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/50</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/13</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/78</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;<span class="cstat-no" title="statement not covered" >t<span class="fstat-no" title="function not covered" >em</span>plate&gt;</span>
+  &lt;section ref="uploader"&gt;
+    &lt;div class="upload" &gt;
+<span class="cstat-no" title="statement not covered" >      &lt;input type="file" :multiple="defaults.multiple"  @change="uploadChange" style="position:absolute;height: 100%;opacity:0;"/&gt;</span>
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/template&gt;
+<span class="cstat-no" title="statement not covered" ></span>
+&lt;script&gt;
+import upload<span class="cstat-no" title="statement not covered" >er from '../util/uploader'</span>
+&nbsp;
+export default {<span class="cstat-no" title="statement not covered" ></span>
+  data () {
+    return {<span class="cstat-no" title="statement not covered" ></span>
+      flag: true,
+      canvas: <span class="cstat-no" title="statement not covered" >null,</span>
+      defaults: {}
+    }<span class="cstat-no" title="statement not covered" ></span>
+  },
+  created () {<span class="cstat-no" title="statement not covered" ></span>
+    let number = 0
+    Object.assign<span class="cstat-no" title="statement not covered" >(this.defaults, {</span>
+      server: this.$parent.server,
+      mul<span class="fstat-no" title="function not covered" >tiple: this.$parent.mul</span>tiple,<span class="cstat-no" title="statement not covered" ></span>
+      max: this.$parent.max,
+<span class="cstat-no" title="statement not covered" >      quality: this.$parent.quality,</span>
+      compress: t<span class="fstat-no" title="function not covered" >his.$</span>parent.compress,
+    <span class="cstat-no" title="statement not covered" >  </span>
+      start: canvas =&gt; {
+        this.$parent.start &amp;&amp; this.$parent.start(canvas)
+      },
+      success: (jsons, index) =&gt; {
+        this.$parent.success &amp;&amp; this.$parent.success(jsons)
+      },<span class="fstat-no" title="function not covered" ></span>
+      progress: <span class="cstat-no" title="statement not covered" >perce</span>nt =&gt; {
+        this.$parent.progress &amp;&amp; this.$parent.progress(percent)
+      },<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >      error: (e, index) =&gt; {</span>
+        this.$parent.types.errCode = index
+        this.$parent.error &amp;&amp; this.$parent.error(e)
+      }
+    })
+    if (this.defaults.max &amp;&amp; number &gt;= this.defaults.max ) {
+      this.flag = false
+      return<span class="fstat-no" title="function not covered" ></span>
+    }<span class="cstat-no" title="statement not covered" ></span>
+  },
+  methods: {<span class="fstat-no" title="function not covered" ></span>
+   uploa<span class="cstat-no" title="statement not covered" >dChange () {</span>
+      const ev = window.event || event
+      let el = ev.target<span class="fstat-no" title="function not covered" ></span>
+      le<span class="cstat-no" title="statement not covered" >t fileList = el.files</span>
+      let file
+      if (fileList.len<span class="fstat-no" title="function not covered" >gth &gt; </span>this.defaults.max ) {
+<span class="cstat-no" title="statement not covered" >        let obj = {</span>
+<span class="cstat-no" title="statement not covered" >          status: 9998,</span>
+          obj: "图片上传数量超过"+ this.defaults.max + '张'
+        }
+<span class="cstat-no" title="statement not covered" >        this.defaults.error &amp;&amp; this.defaults.error(obj)</span>
+<span class="cstat-no" title="statement not covered" >        return</span>
+<span class="cstat-no" title="statement not covered" >      }</span>
+&nbsp;
+      let el_input = this.$refs['uploader']
+      let prev = el_input.previousSibling
+      while (prev.nodeName !== 'UL') {
+        prev = prev.previou<span class="fstat-no" title="function not covered" >sSibling</span>
+      }<span class="cstat-no" title="statement not covered" ></span>
+      let li = prev.querySelectorAll('.item-list')
+      let li_ca<span class="cstat-no" title="statement not covered" >che = prev.querySelect</span>orAll('.item-cache')
+      if (fileL<span class="cstat-no" title="statement not covered" >ist.length</span> + li.length &gt; this.defaults.max ) {
+        let obj = {<span class="cstat-no" title="statement not covered" ></span>
+          status:<span class="cstat-no" title="statement not covered" > 9998,</span>
+<span class="cstat-no" title="statement not covered" >          obj: "图片上传数量超过"+ this.defaults.max + '张'</span>
+        }<span class="cstat-no" title="statement not covered" ></span>
+        this.defaults.error &amp;&amp; this.defaults.error(obj)
+        return
+      }
+<span class="cstat-no" title="statement not covered" ></span>
+      if<span class="cstat-no" title="statement not covered" > (this.d</span>efaults.max &amp;&amp; li.length &gt;= this.defaults.max) {
+        let obj = {
+          status: 9998,
+          obj: "图片上传数<span class="cstat-no" title="statement not covered" >量超过"+ this.defaults.max</span> + '张'
+        }<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >        this.defaults.error &amp;&amp; this.defaults.error(obj)</span>
+<span class="cstat-no" title="statement not covered" >        return</span>
+      }
+      for (let <span class="cstat-no" title="statement not covered" >key of Object.keys(fileList)) {</span>
+        file = fileLi<span class="cstat-no" title="statement not covered" >st[key]</span>
+<span class="cstat-no" title="statement not covered" >        if (file.type &amp;&amp; !(/^(image\/jpeg|image\/png)$/i.test(file.type))) {</span>
+          let obj =<span class="cstat-no" title="statement not covered" > {</span>
+            status: 9997,
+            obj: "图片上传格式不正确"
+          }
+<span class="cstat-no" title="statement not covered" >          this.defaults.error &amp;&amp; this.defaults.error(obj)</span>
+<span class="cstat-no" title="statement not covered" >          return</span>
+        }
+      }
+<span class="cstat-no" title="statement not covered" >      const success = this.defaults.success</span>
+      this.defaults.<span class="cstat-no" title="statement not covered" >file = fileList</span>
+      let arrs = []
+      uploader(this.defaults, this.canvas, el, arrs, num =&gt; {
+        this.$parent.types.failed = num + li_cache.length
+      })<span class="cstat-no" title="statement not covered" >.then(index =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        this.def</span>aults.file = []
+        arrs = []
+        el.value = ''<span class="cstat-no" title="statement not covered" ></span>
+      }).catch(index =&gt; {<span class="cstat-no" title="statement not covered" ></span>
+        console.log(index)<span class="cstat-no" title="statement not covered" ></span>
+      })
+    }<span class="cstat-no" title="statement not covered" ></span>
+  }<span class="cstat-no" title="statement not covered" ></span>
+}<span class="cstat-no" title="statement not covered" ></span>
+&lt;/script&gt;
+<span class="cstat-no" title="statement not covered" ></span></pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Jan 26 2018 15:58:47 GMT+0800 (CST)
+</div>
+</div>
+<script src="../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../sorter.js"></script>
+</body>
+</html>
